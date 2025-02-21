@@ -373,24 +373,53 @@ a.btn.enq_btn .fa-arrow-right {
 /* amenites css */
 
 .icons_wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: #0c261b;
-  gap: 30px;
+  gap: 10px;
   padding: 60px 15px;
   border-radius: 30px;
   width: 85%;
 }
 
+.border_bottom {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, #c6c6c600, #c6c6c6, #c6c6c600) 0 1 1 0;
+}
+
+.border_bottom::after,
+.border_bottom::before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid;
+  border-image: linear-gradient(to top, #c6c6c600, #c6c6c6, #c6c6c600) 0 1 1 0;
+  top: 50%;
+  bottom: 50%;
+  height: 80%;
+  transform: translateY(-50%);
+}
+
+.border_bottom::after {
+  left: 36%;
+}
+
+.border_bottom::before {
+  right: 36%;
+}
+
 .icon_box {
-  width: 25%;
+  width: 118px;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 0px;
   cursor: pointer;
+  text-align: center;
 }
 
 .icon_box img {
@@ -423,6 +452,7 @@ td {
   padding: 10px 15px;
   font-family: "source sans light";
   font-size: 18px;
+  font-weight: 600;
 }
 
 table#pricing_table thead {
@@ -437,6 +467,7 @@ table#pricing_table th {
 table#pricing_table tbody tr td:last-child {
   display: flex;
   justify-content: center;
+  border: 0;
 }
 
 table#pricing_table thead tr th {
@@ -450,9 +481,231 @@ a.btn.enq_btn.enq_price {
   border-radius: 5px;
   width: 45%;
   font-size: 18px;
+  font-weight: 600;
   padding: 10px 20px;
   display: flex;
   justify-content: center;
+}
+
+/* plan section */
+
+div#myTab {
+  position: relative;
+  background: #0c261b;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 505px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+  gap: 20px;
+}
+
+div#myTab::after {
+  content: "";
+  position: absolute;
+  background: url(../images/pattern_4.png) no-repeat left bottom;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: 30%;
+}
+
+div#myTab button {
+  border: 0;
+  cursor: pointer;
+  background: none;
+  color: #ffffff80;
+  font-size: 25px;
+  position: relative;
+  z-index: 9;
+}
+
+div#myTab button.active {
+  color: #fff;
+  font-size: 35px;
+}
+
+div#myTab button.active::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-bottom: 1px solid #9e978a4f;
+}
+
+.tab_content {
+  display: none;
+}
+
+.tab_content.active {
+  display: block;
+}
+
+.plan_img {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.plan_img_box {
+  display: flex;
+  width: 84%;
+  gap: 0px 40px;
+}
+
+.unit_plan .plan_slider .item {
+  display: flex;
+  justify-content: center;
+}
+
+.plan_slider .owl-nav .owl-next {
+  right: -35px;
+}
+
+.plan_slider .owl-nav .owl-prev {
+  left: -35px;
+}
+
+/* Drone View */
+
+.drone_view_img {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.drone_view_img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: brightness(0.5);
+  backdrop-filter: brightness(0.99);
+}
+
+.drone_view_content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: auto;
+  z-index: 9;
+}
+
+.drone_view_content h2 {
+  color: #fff;
+}
+
+/* gallery section */
+
+#gallery .section_title,
+#video_gallery .section_title {
+  margin-bottom: 15px;
+}
+
+#gallery .section_title h2,
+#video_gallery .section_title h2 {
+  position: relative;
+}
+
+#gallery .section_title h2::after,
+#gallery .section_title h2::before,
+#video_gallery .section_title h2::after,
+#video_gallery .section_title h2::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #898989;
+}
+
+#video_gallery .section_title h2::after,
+#video_gallery .section_title h2::before {
+  width: 300px;
+}
+
+#gallery .section_title h2::after {
+  bottom: -10px;
+}
+
+#gallery .section_title h2::before {
+  top: -75px;
+}
+
+#video_gallery .section_title h2::after {
+  bottom: -10px;
+}
+
+#video_gallery .section_title h2::before {
+  top: -75px;
+}
+
+.gallery_slider .owl-item {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery_slider .owl-item.active.center {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery_slider .item {
+  width: 85%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.gallery_slider .owl-nav .owl-prev {
+  left: 12%;
+}
+.gallery_slider .owl-nav .owl-next {
+  right: 12%;
+}
+
+/* Location Highlights */
+
+#highlight .accordion-button:focus {
+  box-shadow: none;
+}
+
+#highlight .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: #0c261b;
+  box-shadow: none;
+}
+
+#highlight .accordion-button {
+  font-size: 18px;
+}
+
+/* Footer */
+
+#footer {
+  background: #0c261b;
+  padding: 40px 0px;
 }
 
 /* owl nav */
@@ -603,11 +856,6 @@ label.checkbox-inline input {
   padding: 8px 35px;
 }
 
-form#contact_us {
-  padding: 50px 0px;
-  border-bottom: 1px solid #fff;
-}
-
 .form_input {
   width: 100%;
 }
@@ -696,6 +944,46 @@ button.enquire_now {
 /*Responsive css*/
 
 @media only screen and (max-width: 1440px) {
+  .banner_img img {
+    height: auto;
+  }
+
+  .banner_form {
+    bottom: 130px;
+  }
+
+  .about_content {
+    padding: 35px 55px;
+  }
+
+  .about_btn {
+    margin-top: 12%;
+  }
+
+  .about_content_wrapper {
+    padding: 20px 50px;
+  }
+
+  .about_content_box {
+    padding: 18px 0px;
+  }
+
+  .icons_wrapper {
+    gap: 0px;
+    padding: 30px 0px;
+  }
+
+  a.btn.enq_btn.enq_price {
+    width: 50%;
+  }
+
+  div#myTab {
+    height: 435px;
+  }
+
+  .border_bottom::after, .border_bottom::before{
+    height: 85%;
+  }
 }
 
 @media only screen and (max-width: 1366px) {

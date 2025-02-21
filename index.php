@@ -758,27 +758,27 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                         <div class="about_content_wrapper">
                             <div class="about_content_box">
                                 <p>Prime Location</p>
-                                <span>Lorem ipsum dolor sit amet consectetur. Ultricies elit tincidunt mattis metus.</span>
+                                <span>Situated 5 mins from Sarjapura, Opp. Azim Premji University.</span>
                             </div>
                             <div class="about_content_box">
                                 <p>Spacious Villas</p>
-                                <span>Lorem ipsum dolor sit amet consectetur. Ultricies elit tincidunt mattis metus.</span>
+                                <span>96 exclusive 4 BHK villas starting from 2975 Sq.ft</span>
                             </div>
                             <div class="about_content_box">
                                 <p>Lush green community </p>
-                                <span>Lorem ipsum dolor sit amet consectetur. Ultricies elit tincidunt mattis metus.</span>
+                                <span>Spread across 6 Acers of landscaped greenry</span>
                             </div>
                             <div class="about_content_box">
                                 <p>Private Garden </p>
-                                <span>Lorem ipsum dolor sit amet consectetur. Ultricies elit tincidunt mattis metus.</span>
+                                <span>Available for select villas with larger dimensions</span>
                             </div>
                             <div class="about_content_box">
                                 <p>Luxury amenities</p>
-                                <span>Lorem ipsum dolor sit amet consectetur. Ultricies elit tincidunt mattis metus.</span>
+                                <span>Clubhouse, swimming pool, fitness center and more.</span>
                             </div>
                             <div class="about_content_box">
                                 <p>Children’s Play Areas</p>
-                                <span>Lorem ipsum dolor sit amet consectetur. Ultricies elit tincidunt mattis metus.</span>
+                                <span>Safe and well-equipped for family living</span>
                             </div>
                         </div>
                     </div>
@@ -791,45 +791,52 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                 <div class="row">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 about_gallery_box">
                         <div class="icons_wrapper">
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/clubhouse.png" alt="">
-                                <caption>Clubhouse</caption>
+                            <div class="border_bottom">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/clubhouse.png" alt="">
+                                    <caption>Clubhouse</caption>
+                                </div>
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Swimming Pool</caption>
+                                </div>
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Fitness Center</caption>
+                                </div>
+                            </div>
+                            <div class="border_bottom">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Landscape Garden</caption>
+                                </div>
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Children Play Area</caption>
+                                </div>
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>24/7 secturity</caption>
+                                </div>
+
+                            </div>
+                            <div class="border_bottom">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Multipurpose Hall</caption>
+                                </div>
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Jogging and Cycling Tracks</caption>
+                                </div>
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Indoor Games Room</caption>
+                                </div>
                             </div>
                             <div class="icon_box">
                                 <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
-                            </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
-                            </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
-                            </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
-                            </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
-                            </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
-                            </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
-                            </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
-                            </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>Clubhouse</caption>
+                                <caption>On-site Convenience Store </caption>
                             </div>
                         </div>
                     </div>
@@ -887,7 +894,252 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                 </div>
             </div>
         </section>
-        <section class="forms">
+
+        <section id="plans">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="plan_tabs" id="myTab" role="tablist">
+                            <button class="plan_tab active" id="master_btn" data-target=".master_plan" aria-selected="true">Master Plan</button>
+                            <button class="plan_tab" id="unit_btn" data-target=".unit_plan" aria-selected="true">Unit Plan</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <div class="tab_content master_plan active">
+                            <div class="plan_slider owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="plan_img">
+                                        <img src="assets/images/plans/webp/master_plan.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab_content unit_plan">
+                            <div class="plan_slider owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="plan_img_box">
+                                        <div class="plan_img">
+                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_1.webp" alt="">
+                                        </div>
+                                        <div class="plan_img">
+                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_2.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="plan_img_box">
+                                        <div class="plan_img">
+                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_3.webp" alt="">
+                                        </div>
+                                        <div class="plan_img">
+                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_4.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="plan_img_box">
+                                        <div class="plan_img">
+                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_5.webp" alt="">
+                                        </div>
+                                        <div class="plan_img">
+                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_6.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="drone_view">
+            <div class="container">
+                <div class="roe">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="drone_view_img">
+                            <img src="assets/images/drone_view_img.png" alt="">
+                            <div class="drone_view_content section_title">
+                                <h2>Drone View</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section_title text-center">
+                            <h2>Gallery</h2>
+                        </div>
+                        <div class="gallery_slider owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video_gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section_title text-center">
+                            <h2>Video Gallery</h2>
+                        </div>
+                        <div class="gallery_slider owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="highlight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section_title text-center">
+                            <h2>Location Highlight</h2>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="location_wrapper">
+                            <img src="assets/images/location_img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Schools
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Cambridge Public School</li>
+                                            <li>Indus International School</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Colleges
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Azim Premji University</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Hospitals
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Twachaa Skin and Hair Clinic</li>
+                                            <li>Motherhood Superspeciality Hospitals & Diagnosis</li>
+                                            <li>Spandana Hospital</li>
+                                            <li>Town Hospital</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        Commercial Hubs
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>D Mart</li>
+                                            <li>Avighna Enclave</li>
+                                            <li>Reliance Trend</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        IT Hubs
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>RGA Tech Park</li>
+                                            <li>Wipro Tecnology Campus</li>
+                                            <li>Global Technology Park</li>
+                                            <li>Vaishnavi Tech Park</li>
+                                            <li>WIpro SEZ, Kodathi</li>
+                                            <li>Upcoming Infosys Campus</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="forms">
             <form action="saveInfo.php" method="POST" id="enquire_price" class="mfp-hide white-popup-block">
                 <div class="section_title text-center">
                     <h3>ENQUIRE NOW</h3>
@@ -967,8 +1219,8 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                 <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
                 <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
             </form>
-        </section>
-        <form action="saveInfo.php" method="POST" id="sticky-form">
+        </section> -->
+        <!-- <form action="saveInfo.php" method="POST" id="sticky-form">
             <i class="close fa-solid fa-xmark"></i>
             <button type="button" class="enquire_now">Enquire Now</button>
             <div class="form_box">
@@ -1005,14 +1257,13 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
             <input type="hidden" name="srd" value="<?php echo $srd; ?>">
             <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
             <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
-        </form>
+        </form> -->
 
-        <footer id="footer_section">
-
+        <footer id="footer">
             <form action="saveInfo.php" method="POST" id="contact_us">
-                <div class="section_title">
+                <!-- <div class="section_title mobile">
                     <h3>ENQUIRE NOW</h3>
-                </div>
+                </div> -->
                 <div class="form_box">
                     <div class="form_input name">
                         <input class="form_input" type="text" id="form_input_name" name="name" placeholder="Name" required>
@@ -1051,9 +1302,6 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                 <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
             </form>
             <div id="ohsnap"></div>
-
-            <div class="copy_right">
-            </div>
         </footer>
     </article>
 

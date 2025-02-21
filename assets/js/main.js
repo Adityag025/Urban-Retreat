@@ -104,71 +104,8 @@ $(document).ready(function () {
       $(tab).addClass(targetClass).css("transition", "all 0.5s ease-in-out");
     });
   }
-  toggleActive(".higlight_tab", "active", ".image_box");
+  toggleActive(".plan_tab", "active", ".tab_content");
 
-  // Amenities Slider
-  let mainSliderSelector = ".main-slider",
-    interleaveOffset = 0.5;
-
-  let mainSliderOptions = {
-    loop: true,
-    speed: 2000,
-    autoplay: {
-      delay: 3000,
-    },
-    loopAdditionalSlides: 10,
-    grabCursor: true,
-    watchSlidesProgress: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    on: {
-      init: function () {
-        this.autoplay.stop();
-      },
-      imagesReady: function () {
-        this.el.classList.remove("loading");
-        this.autoplay.start();
-      },
-      slideChangeTransitionEnd: function () {
-        let swiper = this,
-          captions = swiper.el.querySelectorAll(".content");
-        for (let i = 0; i < captions.length; ++i) {
-          captions[i].classList.remove("show");
-        }
-        swiper.slides[swiper.activeIndex]
-          .querySelector(".content")
-          .classList.add("show");
-      },
-      progress: function () {
-        let swiper = this;
-        for (let i = 0; i < swiper.slides.length; i++) {
-          let slideProgress = swiper.slides[i].progress,
-            innerOffset = swiper.width * interleaveOffset,
-            innerTranslate = slideProgress * innerOffset;
-          swiper.slides[i].querySelector(".slide-bgimg").style.transform =
-            "translate3d(" + innerTranslate + "px, 0, 0)";
-        }
-      },
-      touchStart: function () {
-        let swiper = this;
-        for (let i = 0; i < swiper.slides.length; i++) {
-          swiper.slides[i].style.transition = "";
-        }
-      },
-      setTransition: function (speed) {
-        let swiper = this;
-        for (let i = 0; i < swiper.slides.length; i++) {
-          swiper.slides[i].style.transition = speed + "ms";
-          swiper.slides[i].querySelector(".slide-bgimg").style.transition =
-            speed + "ms";
-        }
-      },
-    },
-  };
-
-  new Swiper(mainSliderSelector, mainSliderOptions);
 
   $(".menu").on("click", function (e) {
     e.preventDefault();
@@ -204,7 +141,7 @@ $(document).ready(function () {
     },
   });
 
-  $("").owlCarousel({
+  $(".plan_slider").owlCarousel({
     loop: false,
     margin: 30,
     nav: true,
@@ -221,22 +158,22 @@ $(document).ready(function () {
         items: 1,
       },
       600: {
-        items: 2,
+        items: 1,
       },
       900: {
-        items: 2,
+        items: 1,
       },
       1000: {
-        items: 2,
+        items: 1,
       },
     },
   });
 
-  $("").owlCarousel({
+  $(".gallery_slider").owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 0,
     nav: true,
-    center: false,
+    center: true,
     smartSpeed: 2000,
     autoplay: true,
 
@@ -256,6 +193,7 @@ $(document).ready(function () {
       },
       1000: {
         items: 2,
+        stagePadding: 190,
       },
     },
   });

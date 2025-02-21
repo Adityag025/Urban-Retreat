@@ -65,6 +65,8 @@ if ($_GET['utm_campaign'] != '') {
 } else {
 
     $utm_campaign = '';
+    $utm_campaign = '';
+
 }
 
 // Capturing UTM Keywords 

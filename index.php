@@ -65,8 +65,6 @@ if ($_GET['utm_campaign'] != '') {
 } else {
 
     $utm_campaign = '';
-    $utm_campaign = '';
-
 }
 
 // Capturing UTM Keywords 
@@ -847,6 +845,43 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                                     <img src="assets/images/gallery/webp/amenities_1.webp" alt="">
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing_plan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="pricing_box">
+                            <table id="pricing_table">
+                                <thead>
+                                    <tr>
+                                        <th>Area</th>
+                                        <th>Price</th>
+                                        <th>Enquire Now</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>750 Sq Ft+</td>
+                                        <td>39.99 Lakh Onwards</td>
+                                        <td><a href="" class="btn enq_btn enq_price">Enquire Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1600 Sq Ft</td>
+                                        <td>84 Lakh Onwards</td>
+                                        <td><a href="" class="btn enq_btn enq_price">Enquire Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2000-3365 Sq Ft</td>
+                                        <td>1.14 Crore Onwards</td>
+                                        <td><a href="" class="btn enq_btn enq_price">Enquire Now</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

@@ -402,6 +402,59 @@ a.btn.enq_btn .fa-arrow-right {
   color: #fff;
 }
 
+.pricing_box {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+table#pricing_table {
+  width: 85%;
+  border-collapse: collapse;
+}
+
+thead,
+tbody,
+tr,
+th,
+td {
+  border-bottom: 1px solid #000;
+  padding: 10px 15px;
+  font-family: "source sans light";
+  font-size: 18px;
+}
+
+table#pricing_table thead {
+  background: #000;
+}
+
+table#pricing_table td,
+table#pricing_table th {
+  text-align: center;
+}
+
+table#pricing_table tbody tr td:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+table#pricing_table thead tr th {
+  color: #fff;
+}
+
+a.btn.enq_btn.enq_price {
+  color: #0c261b;
+  background: #ffffff26;
+  border: 1px solid #0c261b;
+  border-radius: 5px;
+  width: 45%;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
 /* owl nav */
 
 .owl-nav {

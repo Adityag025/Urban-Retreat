@@ -106,20 +106,41 @@ $(document).ready(function () {
   }
   toggleActive(".plan_tab", "active", ".tab_content");
 
-
   $(".menu").on("click", function (e) {
     e.preventDefault();
     $(".menu").toggleClass("active");
     $(".navbar").toggleClass("active");
   });
 
-  $(".about_gallery").owlCarousel({
+  $(".icons_slider").owlCarousel({
     loop: true,
+    margin: 10,
+    nav: true,
+    center: true,
+    smartSpeed: 2000,
+    autoplay: false,
+
+    navText: [
+      '<i class="fa-solid fa-angle-left"></i>',
+      '<i class="fa-solid fa-angle-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 3,
+      },
+      600: {
+        items: 3,
+      },
+    },
+  });
+
+  var owl = $(".about_gallery").owlCarousel({
+    loop: false,
     margin: 30,
     nav: true,
     center: true,
     smartSpeed: 2000,
-    autoplay: true,
+    autoplay: false,
 
     navText: [
       '<i class="fa-solid fa-angle-left"></i>',
@@ -130,7 +151,7 @@ $(document).ready(function () {
         items: 1,
       },
       600: {
-        items: 2,
+        items: 1,
       },
       900: {
         items: 1,
@@ -139,6 +160,23 @@ $(document).ready(function () {
         items: 1,
       },
     },
+  });
+
+  $(".icon_box").click(function () {
+    var index = $(this).data("slide");
+    owl.trigger("to.owl.carousel", [index, 1000]);
+    $(".icon_box").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  // When the carousel changes, update the active icon
+  owl.on("changed.owl.carousel", function (event) {
+    var index = event.item.index - event.relatedTarget._clones.length / 2;
+    index =
+      (index + $(".about_gallery .item").length) %
+      $(".about_gallery .item").length;
+    $(".icon_box").removeClass("active");
+    $(".icon_box[data-slide='" + index + "']").addClass("active");
   });
 
   $(".plan_slider").owlCarousel({
@@ -175,7 +213,7 @@ $(document).ready(function () {
     nav: true,
     center: true,
     smartSpeed: 2000,
-    autoplay: true,
+    autoplay: false,
 
     navText: [
       '<i class="fa-solid fa-angle-left"></i>',
@@ -188,10 +226,11 @@ $(document).ready(function () {
       600: {
         items: 1,
       },
-      900: {
-        items: 2,
-      },
       1000: {
+        items: 2,
+        stagePadding: 130,
+      },
+      1200: {
         items: 2,
         stagePadding: 190,
       },

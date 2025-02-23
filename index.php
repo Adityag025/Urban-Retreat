@@ -599,14 +599,14 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header mobile">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
                     <div class="mobile_header">
                         <div class="header_logo">
                             <a href="index.php">
-                                <img src="assets/images/verde_logo_3.png" alt="Logo">
+                                <img src="assets/images/UR_logo.png" alt="Logo">
                             </a>
                         </div>
                         <div class="menu mobile_menu">
@@ -616,7 +616,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
+                <!-- <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
                     <div class="navbar">
                         <ul class="nav">
                             <li class="nav-item"><a class="nav-link" href="#t">LINK 1</a></li>
@@ -627,16 +627,16 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             <li class="nav-item"><a class="nav-link" href="#">LINK 6</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
-    </header> -->
+    </header>
     <article>
         <section id="banner">
             <div class="banner_wrapper">
                 <div class="banner_img">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="">
+                        <source media="(max-width: 768px)" srcset="assets/images/banner/webp/ur_mobile_banner.webp">
                         <source media="(min-width: 768px)" srcset="assets/images/banner/webp/ur_banner.webp">
                         <img src="assets/images/banner/webp/ur_banner.webp" alt="Banner Image">
                     </picture>
@@ -652,47 +652,112 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                 </div>
             </div>
         </section>
-        <form action="saveInfo.php" method="POST" id="banner-form" class="banner_form">
-            <div class="form_box">
-                <div class="form_input name">
-                    <input class="form_input" type="text" id="form_input_name" name="name" placeholder="Name" required>
-                </div>
-                <div class="form_input email">
-                    <input class="form_input" type="email" id="form_input_email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form_input phone">
-                    <input type="hidden" name="country_code" id="country_code_form" value="91">
-                    <input class="form_input" type="tel" class="phone" id="form_input_phone" name="phone" placeholder="Phone" required>
-                </div>
-                <label class="checkbox-inline">
-                    <input type="checkbox" name="checkbox" value="check" id="agree" checked="checked" required="" aria-required="true">
-                    <div class="privacy_policy_tc">
-                        I have read and understood the Privacy Policy. By registering here, I agree to Urban Retreat Terms & Conditions.
+        <div class="banner_bottom">
+            <div class="mobile project_highlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="highlight_wrapper">
+                                <div class="highlight_box">
+                                    <h3>Location</h3>
+                                    <p>Bangalore</p>
+                                </div>
+                                <div class="highlight_box">
+                                    <h3>Project Units</h3>
+                                    <p>3 bhk and 4 bhk</p>
+                                </div>
+                                <div class="highlight_box">
+                                    <h3>Project</h3>
+                                    <p>3 Acers and 3 Tower</p>
+                                </div>
+                                <div class="highlight_box">
+                                    <h3>Project Pricing</h3>
+                                    <p>Starting at xxx Cr*</p>
+                                </div>
+                            </div>
+                            <!-- <div class="banner_btn">
+                                <a href="javascript:void(0)" class="btn enq_btn enquire_now"><i class="fa-solid fa-arrow-right"></i>Enquire Now</a>
+                            </div> -->
+                        </div>
+
+                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="prj_wrapper">
+                                <div class="section_title">
+                                    <h2>Project Highlights</h2>
+                                </div>
+                                <div class="prj_highlights_wrapper">
+                                    <div class="prj_box">
+                                        <img src="assets/images/prj_highlights_icon.png" alt="">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <div class="prj_box">
+                                        <img src="assets/images/prj_highlights_icon.png" alt="">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <div class="prj_box">
+                                        <img src="assets/images/prj_highlights_icon.png" alt="">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <div class="prj_box">
+                                        <img src="assets/images/prj_highlights_icon.png" alt="">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <div class="prj_box">
+                                        <img src="assets/images/prj_highlights_icon.png" alt="">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <div class="prj_box">
+                                        <img src="assets/images/prj_highlights_icon.png" alt="">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </label>
-                <div class="form_submit_btn">
-                    <input class="form_input" type="submit" id="form_input_submit" value="Submit">
-                    <div class="submit_loading_btn loading" style="display: none;">
-                        <img src="./assets/images/loading.gif" width="20px" alt="">
-                    </div>
+                    <form action="saveInfo.php" method="POST" id="banner-form" class="banner_form">
+                        <div class="form_box">
+                            <div class="form_input name">
+                                <input class="form_input" type="text" id="form_input_name" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="form_input email">
+                                <input class="form_input" type="email" id="form_input_email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form_input phone">
+                                <input type="hidden" name="country_code" id="country_code_form" value="91">
+                                <input class="form_input" type="tel" class="phone" id="form_input_phone" name="phone" placeholder="Phone" required>
+                            </div>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="checkbox" value="check" id="agree" checked="checked" required="" aria-required="true">
+                                <div class="privacy_policy_tc">
+                                    I have read and understood the Privacy Policy. By registering here, I agree to Urban Retreat Terms & Conditions.
+                                </div>
+                            </label>
+                            <div class="form_submit_btn">
+                                <input class="form_input" type="submit" id="form_input_submit" value="Submit">
+                                <div class="submit_loading_btn loading" style="display: none;">
+                                    <img src="./assets/images/loading.gif" width="20px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="form_name" value="enquire_price">
+                        <input type="hidden" name="project" value="Urban Retreat" />
+                        <input type="hidden" name="utm_primarysource" value="<?php echo $utm_primarysource; ?>">
+                        <input type="hidden" name="utm_secondarysource" value="<?php echo $utm_secondarysource; ?>">
+                        <input type="hidden" name="utm_tertiarysource" value="<?php echo $utm_tertiarysource; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $utm_campaign; ?>">
+                        <input type="hidden" name="utm_keywords" value="<?php echo $utm_keywords; ?>">
+                        <input type="hidden" name="srd" value="<?php echo $srd; ?>">
+                        <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
+                        <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
+                    </form>
                 </div>
             </div>
-            <input type="hidden" name="form_name" value="enquire_price">
-            <input type="hidden" name="project" value="Urban Retreat" />
-            <input type="hidden" name="utm_primarysource" value="<?php echo $utm_primarysource; ?>">
-            <input type="hidden" name="utm_secondarysource" value="<?php echo $utm_secondarysource; ?>">
-            <input type="hidden" name="utm_tertiarysource" value="<?php echo $utm_tertiarysource; ?>">
-            <input type="hidden" name="utm_campaign" value="<?php echo $utm_campaign; ?>">
-            <input type="hidden" name="utm_keywords" value="<?php echo $utm_keywords; ?>">
-            <input type="hidden" name="srd" value="<?php echo $srd; ?>">
-            <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
-            <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
-        </form>
+        </div>
 
         <section id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div class="about_content">
                             <div class="section_title">
                                 <h2>About Urban Retreat</h2>
@@ -707,7 +772,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div class="about_content_right">
                             <div class="counter_block">
                                 <div class="counter_box">
@@ -740,22 +805,71 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
         <section id="about_gallery">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
                         <div class="about_gallery owl-carousel owl-theme">
                             <div class="item">
                                 <div class="img_box">
                                     <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <div class="about_content_box mobile">
+                                        <p>Prime Location</p>
+                                        <span>Situated 5 mins from Sarjapura, Opp. Azim Premji University.</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="img_box">
                                     <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <div class="about_content_box mobile">
+                                        <p>Spacious Villas</p>
+                                        <span>96 exclusive 4 BHK villas starting from 2975 Sq.ft</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img_box">
+                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <div class="about_content_box mobile">
+                                        <p>Lush green community </p>
+                                        <span>Spread across 6 Acers of landscaped greenry</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img_box">
+                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <div class="about_content_box mobile">
+                                        <p>Private Garden </p>
+                                        <span>Available for select villas with larger dimensions</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img_box">
+                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <div class="about_content_box mobile">
+                                        <p>Luxury amenities</p>
+                                        <span>Clubhouse, swimming pool, fitness center and more.</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img_box">
+                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <div class="about_content_box mobile">
+                                        <p>Children’s Play Areas</p>
+                                        <span>Safe and well-equipped for family living</span>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 about_gallery_box">
-                        <div class="about_content_wrapper">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12 about_gallery_box">
+                        <div class="about_content_wrapper desktop">
                             <div class="about_content_box">
                                 <p>Prime Location</p>
                                 <span>Situated 5 mins from Sarjapura, Opp. Azim Premji University.</span>
@@ -789,67 +903,179 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
         <section id="amenities">
             <div class="container">
                 <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile text-center">
+                        <div class="section_title">
+                            <h2>Amenities</h2>
+                        </div>
+                    </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 about_gallery_box">
-                        <div class="icons_wrapper">
+                        <div class="icons_wrapper desktop">
                             <div class="border_bottom">
-                                <div class="icon_box">
-                                    <img src="assets/images/gallery/clubhouse.png" alt="">
+                                <div data-slide="0" class="icon_box active">
+                                    <img src="assets/images/gallery/clubhouse.png" alt="Clubhouse">
                                     <caption>Clubhouse</caption>
                                 </div>
-                                <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                <div data-slide="1" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="Swimming Pool">
                                     <caption>Swimming Pool</caption>
                                 </div>
-                                <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                <div data-slide="2" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="Fitness Center">
                                     <caption>Fitness Center</caption>
                                 </div>
                             </div>
                             <div class="border_bottom">
-                                <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                <div data-slide="3" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="Landscape Garden">
                                     <caption>Landscape Garden</caption>
                                 </div>
-                                <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                <div data-slide="4" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="Children Play Area">
                                     <caption>Children Play Area</caption>
                                 </div>
-                                <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                <div data-slide="5" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="24/7 secturity">
                                     <caption>24/7 secturity</caption>
                                 </div>
 
                             </div>
                             <div class="border_bottom">
+                                <div data-slide="6" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="Multipurpose Hal">
+                                    <caption>Multipurpose Hall</caption>
+                                </div>
+                                <div data-slide="7" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="Jogging and Cycling Tracks">
+                                    <caption>Jogging and Cycling Tracks</caption>
+                                </div>
+                                <div data-slide="8" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="Indoor Games Room">
+                                    <caption>Indoor Games Room</caption>
+                                </div>
+                            </div>
+                            <div class="border_bottom">
+                                <div data-slide="9" class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="On-site Convenience Store">
+                                    <caption>On-site Convenience Store </caption>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="about_gallery owl-carousel owl-theme">
+                            <div class="item" data-slide="0">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="Clubhouse">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="1">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="Swimming Pool">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="2">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="Fitness Center">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="3">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="Landscape Garden">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="4">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="Children Play Area">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="5">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="24/7 Security">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="6">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="Multipurpose Hall">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="7">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="Jogging & Cycling">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="8">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="Indoor game room">
+                                </div>
+                            </div>
+                            <div class="item" data-slide="9">
+                                <div class="img_box">
+                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="On-site convenience store">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 icons mobile">
+                        <div class="icons_slider owl-carousel owl-theme">
+                            <div class="item" data-slide="0">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/clubhouse.png" alt="">
+                                    <caption>Clubhouse</caption>
+                                </div>
+                            </div>
+                            <div class="item" data-slide="1">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Swimming Pool</caption>
+                                </div>
+                            </div>
+                            <div class="item" data-slide="2">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Fitness Center</caption>
+                                </div>
+                            </div>
+                            <div class="item" data-slide="3">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Landscape Garden</caption>
+                                </div>
+                            </div>
+                            <div class="item" data-slide="4">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>Children Play Area</caption>
+                                </div>
+                            </div>
+                            <div class="item" data-slide="5">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>24/7 secturity</caption>
+                                </div>
+                            </div>
+                            <div class="item" data-slide="6">
                                 <div class="icon_box">
                                     <img src="assets/images/gallery/amenities_icon.png" alt="">
                                     <caption>Multipurpose Hall</caption>
                                 </div>
+                            </div>
+                            <div class="item" data-slide="7">
                                 <div class="icon_box">
                                     <img src="assets/images/gallery/amenities_icon.png" alt="">
                                     <caption>Jogging and Cycling Tracks</caption>
                                 </div>
+                            </div>
+                            <div class="item" data-slide="8">
                                 <div class="icon_box">
                                     <img src="assets/images/gallery/amenities_icon.png" alt="">
                                     <caption>Indoor Games Room</caption>
                                 </div>
                             </div>
-                            <div class="icon_box">
-                                <img src="assets/images/gallery/amenities_icon.png" alt="">
-                                <caption>On-site Convenience Store </caption>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="about_gallery owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="img_box">
-                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="img_box">
-                                    <img src="assets/images/gallery/webp/amenities_1.webp" alt="">
+                            <div class="item" data-slide="9">
+                                <div class="icon_box">
+                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <caption>On-site Convenience Store </caption>
                                 </div>
                             </div>
                         </div>

@@ -675,8 +675,8 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                                     <p>Starting at xxx Cr*</p>
                                 </div>
                             </div>
-                            <!-- <div class="banner_btn">
-                                <a href="javascript:void(0)" class="btn enq_btn enquire_now"><i class="fa-solid fa-arrow-right"></i>Enquire Now</a>
+                            <!-- <div class="banner_btn enq_form_btn">
+                                <a href="#enquire_price" class="btn enq_btn enquire_now"><i class="fa-solid fa-arrow-right"></i>Enquire Now</a>
                             </div> -->
                         </div>
 
@@ -714,50 +714,51 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             </div>
                         </div>
                     </div>
-                    <form action="saveInfo.php" method="POST" id="banner-form" class="banner_form">
-                        <div class="form_box">
-                            <div class="form_input name">
-                                <input class="form_input" type="text" id="form_input_name" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="form_input email">
-                                <input class="form_input" type="email" id="form_input_email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form_input phone">
-                                <input type="hidden" name="country_code" id="country_code_form" value="91">
-                                <input class="form_input" type="tel" class="phone" id="form_input_phone" name="phone" placeholder="Phone" required>
-                            </div>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" name="checkbox" value="check" id="agree" checked="checked" required="" aria-required="true">
-                                <div class="privacy_policy_tc">
-                                    I have read and understood the Privacy Policy. By registering here, I agree to Urban Retreat Terms & Conditions.
-                                </div>
-                            </label>
-                            <div class="form_submit_btn">
-                                <input class="form_input" type="submit" id="form_input_submit" value="Submit">
-                                <div class="submit_loading_btn loading" style="display: none;">
-                                    <img src="./assets/images/loading.gif" width="20px" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="form_name" value="enquire_price">
-                        <input type="hidden" name="project" value="Urban Retreat" />
-                        <input type="hidden" name="utm_primarysource" value="<?php echo $utm_primarysource; ?>">
-                        <input type="hidden" name="utm_secondarysource" value="<?php echo $utm_secondarysource; ?>">
-                        <input type="hidden" name="utm_tertiarysource" value="<?php echo $utm_tertiarysource; ?>">
-                        <input type="hidden" name="utm_campaign" value="<?php echo $utm_campaign; ?>">
-                        <input type="hidden" name="utm_keywords" value="<?php echo $utm_keywords; ?>">
-                        <input type="hidden" name="srd" value="<?php echo $srd; ?>">
-                        <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
-                        <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
-                    </form>
                 </div>
             </div>
+
+            <form action="saveInfo.php" method="POST" id="banner-form" class="banner_form">
+                <div class="form_box">
+                    <div class="form_input name">
+                        <input class="form_input" type="text" id="form_input_name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form_input email">
+                        <input class="form_input" type="email" id="form_input_email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form_input phone">
+                        <input type="hidden" name="country_code" id="country_code_form" value="91">
+                        <input class="form_input" type="tel" class="phone" id="form_input_phone" name="phone" placeholder="Phone" required>
+                    </div>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="checkbox" value="check" id="agree" checked="checked" required="" aria-required="true">
+                        <div class="privacy_policy_tc">
+                            I have read and understood the Privacy Policy. By registering here, I agree to Urban Retreat Terms & Conditions.
+                        </div>
+                    </label>
+                    <div class="form_submit_btn">
+                        <input class="form_input" type="submit" id="form_input_submit" value="Submit">
+                        <div class="submit_loading_btn loading" style="display: none;">
+                            <img src="./assets/images/loading.gif" width="20px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="form_name" value="enquire_price">
+                <input type="hidden" name="project" value="Urban Retreat" />
+                <input type="hidden" name="utm_primarysource" value="<?php echo $utm_primarysource; ?>">
+                <input type="hidden" name="utm_secondarysource" value="<?php echo $utm_secondarysource; ?>">
+                <input type="hidden" name="utm_tertiarysource" value="<?php echo $utm_tertiarysource; ?>">
+                <input type="hidden" name="utm_campaign" value="<?php echo $utm_campaign; ?>">
+                <input type="hidden" name="utm_keywords" value="<?php echo $utm_keywords; ?>">
+                <input type="hidden" name="srd" value="<?php echo $srd; ?>">
+                <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
+                <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
+            </form>
         </div>
 
         <section id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="about_content">
                             <div class="section_title">
                                 <h2>About Urban Retreat</h2>
@@ -768,11 +769,11 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                                 <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocab. Omnicos directe al desirabilite de un no v lingua franca</p>
                             </div>
                             <div class="about_btn">
-                                <a href="javascript:void(0)" class="btn enq_btn brochure_btn"><i class="fa-solid fa-arrow-right"></i>Download Brochure</a>
+                                <a href="#brochure_form" class="btn enq_btn brochure_btn popup-link"><i class="fa-solid fa-arrow-right"></i>Download Brochure</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="about_content_right">
                             <div class="counter_block">
                                 <div class="counter_box">
@@ -818,7 +819,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             </div>
                             <div class="item">
                                 <div class="img_box">
-                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <img src="assets/images/webp/about_gallery_img_2.webp" alt="">
                                     <div class="about_content_box mobile">
                                         <p>Spacious Villas</p>
                                         <span>96 exclusive 4 BHK villas starting from 2975 Sq.ft</span>
@@ -828,7 +829,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             </div>
                             <div class="item">
                                 <div class="img_box">
-                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <img src="assets/images/webp/about_gallery_img_3.webp" alt="">
                                     <div class="about_content_box mobile">
                                         <p>Lush green community </p>
                                         <span>Spread across 6 Acers of landscaped greenry</span>
@@ -838,7 +839,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             </div>
                             <div class="item">
                                 <div class="img_box">
-                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <img src="assets/images/webp/about_gallery_img_7.webp" alt="">
                                     <div class="about_content_box mobile">
                                         <p>Private Garden </p>
                                         <span>Available for select villas with larger dimensions</span>
@@ -848,7 +849,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             </div>
                             <div class="item">
                                 <div class="img_box">
-                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <img src="assets/images/webp/about_gallery_img_5.webp" alt="">
                                     <div class="about_content_box mobile">
                                         <p>Luxury amenities</p>
                                         <span>Clubhouse, swimming pool, fitness center and more.</span>
@@ -858,7 +859,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             </div>
                             <div class="item">
                                 <div class="img_box">
-                                    <img src="assets/images/webp/about_gallery_img_1.webp" alt="">
+                                    <img src="assets/images/webp/about_gallery_img_6.webp" alt="">
                                     <div class="about_content_box mobile">
                                         <p>Children’s Play Areas</p>
                                         <span>Safe and well-equipped for family living</span>
@@ -916,46 +917,45 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                                     <caption>Clubhouse</caption>
                                 </div>
                                 <div data-slide="1" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="Swimming Pool">
+                                    <img src="assets/images/icons/swimming_pool.png" alt="Swimming Pool">
                                     <caption>Swimming Pool</caption>
                                 </div>
                                 <div data-slide="2" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="Fitness Center">
+                                    <img src="assets/images/icons/fitness_center.png" alt="Fitness Center">
                                     <caption>Fitness Center</caption>
                                 </div>
                             </div>
                             <div class="border_bottom">
                                 <div data-slide="3" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="Landscape Garden">
+                                    <img src="assets/images/icons/landscape_garden.png" alt="Landscape Garden">
                                     <caption>Landscape Garden</caption>
                                 </div>
                                 <div data-slide="4" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="Children Play Area">
+                                    <img src="assets/images/icons/children_play_area.png" alt="Children Play Area">
                                     <caption>Children Play Area</caption>
                                 </div>
                                 <div data-slide="5" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="24/7 secturity">
+                                    <img src="assets/images/icons/secturity.png" alt="24/7 secturity">
                                     <caption>24/7 secturity</caption>
                                 </div>
-
                             </div>
                             <div class="border_bottom">
                                 <div data-slide="6" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="Multipurpose Hal">
+                                    <img src="assets/images/icons/multipurpose_hall.png" alt="Multipurpose Hal">
                                     <caption>Multipurpose Hall</caption>
                                 </div>
                                 <div data-slide="7" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="Jogging and Cycling Tracks">
+                                    <img src="assets/images/icons/jogging_and_cycling_tracks.png" alt="Jogging and Cycling Tracks">
                                     <caption>Jogging and Cycling Tracks</caption>
                                 </div>
                                 <div data-slide="8" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="Indoor Games Room">
+                                    <img src="assets/images/icons/indoor_games_room.png" alt="Indoor Games Room">
                                     <caption>Indoor Games Room</caption>
                                 </div>
                             </div>
                             <div class="border_bottom">
                                 <div data-slide="9" class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="On-site Convenience Store">
+                                    <img src="assets/images/icons/on-site_convenience_store.png" alt="On-site Convenience Store">
                                     <caption>On-site Convenience Store </caption>
                                 </div>
                             </div>
@@ -963,7 +963,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
 
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="about_gallery owl-carousel owl-theme">
+                        <div class="amenities_gallery owl-carousel owl-theme">
                             <div class="item" data-slide="0">
                                 <div class="img_box">
                                     <img src="assets/images/gallery/webp/amenities_1.webp" alt="Clubhouse">
@@ -1020,61 +1020,71 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                         <div class="icons_slider owl-carousel owl-theme">
                             <div class="item" data-slide="0">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/clubhouse.png" alt="">
+                                    <img class="icon_img one active" src="assets/images/gallery/clubhouse.png" alt="">
+                                    <img class="icon_img two" src="assets/images/gallery/clubhouse.png" alt="">
                                     <caption>Clubhouse</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="1">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/swimming_pool.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/swimming_pool.png" alt="">
                                     <caption>Swimming Pool</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="2">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/fitness_center.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/fitness_center.png" alt="">
                                     <caption>Fitness Center</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="3">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/landscape_garden.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/landscape_garden.png" alt="">
                                     <caption>Landscape Garden</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="4">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/children_play_area.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/children_play_area.png" alt="">
                                     <caption>Children Play Area</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="5">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/secturity.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/secturity.png" alt="">
                                     <caption>24/7 secturity</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="6">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/multipurpose_hall.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/multipurpose_hall.png" alt="">
                                     <caption>Multipurpose Hall</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="7">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/jogging_and_cycling_tracks.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/jogging_and_cycling_tracks.png" alt="">
                                     <caption>Jogging and Cycling Tracks</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="8">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/indoor_games_room.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/indoor_games_room.png" alt="">
                                     <caption>Indoor Games Room</caption>
                                 </div>
                             </div>
                             <div class="item" data-slide="9">
                                 <div class="icon_box">
-                                    <img src="assets/images/gallery/amenities_icon.png" alt="">
+                                    <img class="icon_img one" src="assets/images/icons/on-site_convenience_store.png" alt="">
+                                    <img class="icon_img two active" src="assets/images/icons/half_white/on-site_convenience_store.png" alt="">
                                     <caption>On-site Convenience Store </caption>
                                 </div>
                             </div>
@@ -1101,17 +1111,17 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                                     <tr>
                                         <td>750 Sq Ft+</td>
                                         <td>39.99 Lakh Onwards</td>
-                                        <td><a href="" class="btn enq_btn enq_price">Enquire Now</a></td>
+                                        <td><a href="#enquire_price" class="btn enq_btn enq_price popup-link">Enquire Now</a></td>
                                     </tr>
                                     <tr>
                                         <td>1600 Sq Ft</td>
                                         <td>84 Lakh Onwards</td>
-                                        <td><a href="" class="btn enq_btn enq_price">Enquire Now</a></td>
+                                        <td><a href="#enquire_price" class="btn enq_btn enq_price popup-link">Enquire Now</a></td>
                                     </tr>
                                     <tr>
                                         <td>2000-3365 Sq Ft</td>
                                         <td>1.14 Crore Onwards</td>
-                                        <td><a href="" class="btn enq_btn enq_price">Enquire Now</a></td>
+                                        <td><a href="#enquire_price" class="btn enq_btn enq_price popup-link">Enquire Now</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1135,7 +1145,9 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             <div class="plan_slider owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="plan_img">
-                                        <img src="assets/images/plans/webp/master_plan.webp" alt="">
+                                        <a class="image-popup" href="assets/images/plans/webp/master_plan.webp">
+                                            <img src="assets/images/plans/webp/master_plan.webp" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1146,30 +1158,30 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                                 <div class="item">
                                     <div class="plan_img_box">
                                         <div class="plan_img">
-                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_1.webp" alt="">
+                                            <a class="image-popup" href="assets/images/plans/unit_plan/webp/unit_plan_1.webp"><img src="assets/images/plans/unit_plan/webp/unit_plan_1.webp" alt=""></a>
                                         </div>
                                         <div class="plan_img">
-                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_2.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="plan_img_box">
-                                        <div class="plan_img">
-                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_3.webp" alt="">
-                                        </div>
-                                        <div class="plan_img">
-                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_4.webp" alt="">
+                                            <a class="image-popup" href="assets/images/plans/unit_plan/webp/unit_plan_2.webp"><img src="assets/images/plans/unit_plan/webp/unit_plan_2.webp" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="plan_img_box">
                                         <div class="plan_img">
-                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_5.webp" alt="">
+                                            <a class="image-popup" href="assets/images/plans/unit_plan/webp/unit_plan_3.webp"><img src="assets/images/plans/unit_plan/webp/unit_plan_3.webp" alt=""></a>
                                         </div>
                                         <div class="plan_img">
-                                            <img src="assets/images/plans/unit_plan/webp/unit_plan_6.webp" alt="">
+                                            <a class="image-popup" href="assets/images/plans/unit_plan/webp/unit_plan_4.webp"><img src="assets/images/plans/unit_plan/webp/unit_plan_4.webp" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="plan_img_box">
+                                        <div class="plan_img">
+                                            <a class="image-popup" href="assets/images/plans/unit_plan/webp/unit_plan_5.webp"><img src="assets/images/plans/unit_plan/webp/unit_plan_5.webp" alt=""></a>
+                                        </div>
+                                        <div class="plan_img">
+                                            <a class="image-popup" href="assets/images/plans/unit_plan/webp/unit_plan_6.webp"><img src="assets/images/plans/unit_plan/webp/unit_plan_6.webp" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1210,17 +1222,37 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                             </div>
                             <div class="item">
                                 <div class="gallery_img">
-                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                    <img src="assets/images/gallery/webp/gallery_img_2.webp" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="gallery_img">
-                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                    <img src="assets/images/gallery/webp/gallery_img_3.webp" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="gallery_img">
-                                    <img src="assets/images/gallery/webp/gallery_img_1.webp" alt="">
+                                    <img src="assets/images/gallery/webp/gallery_img_4.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_5.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_6.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_7.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="gallery_img">
+                                    <img src="assets/images/gallery/webp/gallery_img_8.webp" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1365,7 +1397,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
             </div>
         </section>
 
-        <!-- <section class="forms">
+        <section class="forms">
             <form action="saveInfo.php" method="POST" id="enquire_price" class="mfp-hide white-popup-block">
                 <div class="section_title text-center">
                     <h3>ENQUIRE NOW</h3>
@@ -1384,7 +1416,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                     <label class="checkbox-inline">
                         <input type="checkbox" name="checkbox" value="check" id="agree" checked="checked" required="" aria-required="true">
                         <div class="privacy_policy_tc">
-                            I have read and understood the Privacy Policy. By registering here, I agree to TVS Emerald's Terms & Conditions.
+                            I have read and understood the Privacy Policy. By registering here, I agree to Urban Retreat Terms & Conditions.
                         </div>
                     </label>
                     <div class="form_submit_btn">
@@ -1445,8 +1477,8 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
                 <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
                 <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
             </form>
-        </section> -->
-        <!-- <form action="saveInfo.php" method="POST" id="sticky-form">
+        </section>
+        <form action="saveInfo.php" method="POST" id="sticky-form" class="mobile">
             <i class="close fa-solid fa-xmark"></i>
             <button type="button" class="enquire_now">Enquire Now</button>
             <div class="form_box">
@@ -1483,7 +1515,7 @@ $original_referrer = $_SERVER['HTTP_REFERER'];
             <input type="hidden" name="srd" value="<?php echo $srd; ?>">
             <input type="hidden" name="gclid" value="<?php echo $gclid; ?>">
             <input type="hidden" name="pageUrl" value='<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>'>
-        </form> -->
+        </form>
 
         <footer id="footer">
             <form action="saveInfo.php" method="POST" id="contact_us">

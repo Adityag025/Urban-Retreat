@@ -38,18 +38,18 @@ $(document).ready(function () {
       countryCodeElem.val(dialCode);
     });
 
-  zoomEnable();
-  function zoomEnable() {
+  // zoomEnable();
+  // function zoomEnable() {
     $(".image-popup").magnificPopup({
       type: "image",
       fixedContentPos: true,
       callbacks: {
         open: function () {
           var $image = $(".mfp-img");
-          $image.CloudZoom({
-            zoomPosition: "inside",
-            zoomOffsetX: 0,
-          });
+          // $image.CloudZoom({
+          //   zoomPosition: "inside",
+          //   zoomOffsetX: 0,
+          // });
         },
         close: function () {
           var $image = $(".mfp-img");
@@ -57,7 +57,7 @@ $(document).ready(function () {
         },
       },
     });
-  }
+  // }
 
   $(".img-popup").magnificPopup({
     delegate: "a",
@@ -134,7 +134,35 @@ $(document).ready(function () {
     },
   });
 
-  var owl = $(".about_gallery").owlCarousel({
+  $(".about_gallery").owlCarousel({
+    loop: false,
+    margin: 30,
+    nav: true,
+    center: true,
+    smartSpeed: 2000,
+    autoplay: false,
+
+    navText: [
+      '<i class="fa-solid fa-angle-left"></i>',
+      '<i class="fa-solid fa-angle-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      900: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+
+  var owl = $(".amenities_gallery").owlCarousel({
     loop: false,
     margin: 30,
     nav: true,
@@ -225,6 +253,10 @@ $(document).ready(function () {
       },
       600: {
         items: 1,
+      },
+      900: {
+        items: 2,
+        stagePadding: 70,
       },
       1000: {
         items: 2,
